@@ -1,0 +1,12 @@
+package email_finder;
+
+public class findit {
+
+	public static void main(String[] args) {
+		
+		String[] emails = {"xyz@abc.com", "abc@xyz.com", "aaa@bbb.com", "bbb@aaa.com", "XYZ@ABC.COM"};
+		System.out.println(emails[0]);
+
+	}
+
+}

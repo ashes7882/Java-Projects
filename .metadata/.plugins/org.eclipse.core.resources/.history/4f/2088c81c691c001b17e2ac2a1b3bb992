@@ -1,0 +1,18 @@
+package email_finder;
+import java.util.*; 
+
+
+public class findit {
+
+	public static void main(String[] args) {
+		
+		String[] emails = {"xyz@abc.com", "abc@xyz.com", "aaa@bbb.com", "bbb@aaa.com", "XYZ@ABC.COM"};
+		System.out.println("Please enter an email to search in the data set:");
+		
+		Scanner sc = new Scanner(System.in);
+		String userInput = sc.nextLine();
+		System.out.println(userInput);
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package email_finder;
+import java.util.*; 
+
+
+public class findit {
+
+	public static void main(String[] args) {
+		
+		String[] emails = {"xyz@abc.com", "abc@xyz.com", "aaa@bbb.com", "bbb@aaa.com", "XYZ@ABC.COM"};
+		List emails_list = Arrays.asList(emails);
+		int length = emails.length;
+//		System.out.println(length);
+		System.out.println("Please enter an email to search in the data set:");
+		
+		Scanner sc = new Scanner(System.in);
+		String userInput = sc.nextLine();
+		
+//		if(emails_list.contains(userInput)) {
+//			System.out.println("The email id is found at index:");
+//		}else {
+//			System.out.println("Email not found");
+//		}
+		
+		for(int n = 0; n<length; n++){
+			if(emails[n].equals(userInput)) {
+				System.out.println("Found the email at index:" + n);
+				break;
+		}else {
+			System.out.println("Email not found");
+		}
+	}
+	}
+}
